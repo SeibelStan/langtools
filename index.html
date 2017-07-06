@@ -1,0 +1,36 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" href="assets/lang.css"/>
+	<title>Языковые инструменты</title>
+</head>
+
+<body>
+<div id="content">
+	<textarea id="lang-source" class="lang-area" placeholder="Источник"></textarea><!--
+	--><textarea id="lang-res" class="lang-area" placeholder="Результат"></textarea>
+	<div id="lang-panel"></div>
+</div>
+
+<script>
+	function langButtonAdd(btn) {
+		$('#lang-panel').append(
+			'<button onclick="' + btn.funct + '" title="' + btn.title + '">' + btn.text + '</button> '
+		);
+	}
+
+	source = $('#lang-source');
+	res = $('#lang-res');
+</script>
+
+<script src="assets/typo.js"></script>
+<script src="assets/translit.js"></script>
+<script src="assets/translit2.js"></script>
+<script src="assets/morze-rus.js"></script>
+<script src="assets/morze-lat.js"></script>
+<script src="assets/runic.js"></script>
+<script src="assets/sort.js"></script>
+<script src="assets/eval.js"></script>
+</body>
